@@ -16,23 +16,23 @@ public class Customer {
             String lastName;
 
             System.out.print("Enter First Name " + (i + 1) + ":");
-            firstName = input.nextLine();
+            firstName = input.nextLine().trim();
 
             if (firstName.isEmpty()) {
 
                 System.out.println("First name cannot be empty" + "\n");
                 System.out.print("Enter First Name " + (i + 1) + ":");
-                firstName = input.nextLine();
+                firstName = input.nextLine().trim();
             }
 
             System.out.print("Enter Last Name " + (i + 1) + ":");
-            lastName = input.nextLine();
+            lastName = input.nextLine().trim();
 
             if (lastName.isEmpty()) {
                 System.out.println("Last name cannot be empty" + "\n");
 
                 System.out.print("Enter Last Name " + (i + 1) + ":");
-                lastName = input.nextLine();
+                lastName = input.nextLine().trim();
             }
             customerNames[i] = firstName + " " + lastName;
         }
